@@ -36,6 +36,7 @@ public class LandingPage extends reuse{
 	}
 	public productHomePage loginFuntion(String uemail,String pass) {
 		email.sendKeys(uemail);
+		System.out.println("check5");
 		password.sendKeys(pass);
 		loginBtn.click();
 		System.out.println("check4");

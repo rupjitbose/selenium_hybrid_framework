@@ -26,6 +26,7 @@ public class orderSubmitPage extends reuse{
 	
 	public void selectCountry(String con) {
 		Actions a=new Actions(driver);
+		System.out.println("check6");
 		a.sendKeys(ddown,con).build().perform();
 		waitForElementVisible(By.xpath("//section[contains(@class,'list-group ng-star')]"));
 		select.click();
@@ -33,6 +34,7 @@ public class orderSubmitPage extends reuse{
 	}
 	public summaryPage submitOrder() {
 		btn.click();
+		System.out.println("check7");
 		summaryPage sp=new summaryPage(driver);
 		return sp;
 	}
