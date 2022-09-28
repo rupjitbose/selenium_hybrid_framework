@@ -28,9 +28,12 @@ public class summaryPage extends reuse{
 	public String getOrderId() throws InterruptedException {
 		
 		Thread.sleep(1500);
+		System.out.println("check1");
+		System.out.println("check2");
 		String finalStr=orderId.getText().split(" ")[1].trim();
 		return finalStr;
 	
 }
+	
 	
 }
