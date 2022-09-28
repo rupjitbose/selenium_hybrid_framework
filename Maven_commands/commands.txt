@@ -1,0 +1,21 @@
+mvn test     //will run all the test cases available in the project.
+mvn test -PPurchase     //mvn test -P then write the Profile name on the POM.xlm eg= Purchase; and that profile's  testng xml will get triggered all cases will run.  
+mvn test -PErrorHandle -Dbrowser=edge     //will use the browser of your choice.
+C:\Users\Rupjit\location of jenkins.war file>java -jar jenkins.war --httpPort=9090  //run jenkins
+Invoke top-level Maven targets
+Goals = test -PErrorHandle -Dbrowser=edge
+
+
+Choice Parameter
+
+
+Name
+
+profiles
+Choices
+
+ErrorHandle
+Purchase
+Description
+
+test -P"$profiles" -Dbrowser="$browsers"
