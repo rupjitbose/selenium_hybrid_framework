@@ -38,6 +38,7 @@ public class LandingPage extends reuse{
 		email.sendKeys(uemail);
 		password.sendKeys(pass);
 		loginBtn.click();
+		System.out.println("check4");
 		productHomePage home=new productHomePage(driver);
 		return home;
 	}

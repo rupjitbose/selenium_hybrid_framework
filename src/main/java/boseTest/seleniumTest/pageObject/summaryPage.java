@@ -30,6 +30,7 @@ public class summaryPage extends reuse{
 		Thread.sleep(1500);
 		System.out.println("check1");
 		System.out.println("check2");
+		System.out.println("check3");
 		String finalStr=orderId.getText().split(" ")[1].trim();
 		return finalStr;
 	
